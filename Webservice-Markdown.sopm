@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otobo_package version="1.1">
+    <Name>Webservice-Markdown</Name>
+    <Version>11.1.0.1</Version>
+    <Framework>11.1.x</Framework>
+    <Vendor>Rother OSS GmbH</Vendor>
+    <URL>https://otobo.io/</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <Description Lang="en">Markdown support for web services: converts Markdown article bodies to HTML in the ticket operations and HTML article bodies to Markdown in the ticket invokers.</Description>
+    <Description Lang="de">Markdown-Unterstützung für Webservices: wandelt Markdown-Artikel in den Ticket-Operationen nach HTML und HTML-Artikel in den Ticket-Invokern nach Markdown.</Description>
+    <ModuleRequired Version="1.14">Markdown::Perl</ModuleRequired>
+    <ModuleRequired Version="5.07">HTML::TreeBuilder</ModuleRequired>
+    <Filelist>
+        <File Permission="660" Location="Custom/Kernel/GenericInterface/Invoker/Ticket/Common.pm" />
+        <File Permission="660" Location="Custom/Kernel/GenericInterface/Operation/Ticket/Common.pm" />
+        <File Permission="660" Location="Custom/Kernel/GenericInterface/Operation/Ticket/TicketCreate.pm" />
+        <File Permission="660" Location="Custom/Kernel/GenericInterface/Operation/Ticket/TicketUpdate.pm" />
+        <File Permission="660" Location="doc/content/index.rst" />
+        <File Permission="660" Location="doc/images/otobo-logo.png" />
+        <File Permission="660" Location="Kernel/System/Markdown.pm" />
+        <File Permission="660" Location="scripts/test/GenericInterface/Invoker/Ticket/MarkdownBody.t" />
+        <File Permission="660" Location="scripts/test/Markdown/FromHTML.t" />
+        <File Permission="660" Location="scripts/test/Markdown/ToHTML.t" />
+    </Filelist>
+    <IntroInstall Lang="en" Title="Install Information" Type="pre">
+        &lt;br/&gt;
+        &lt;strong&gt;WELCOME&lt;/strong&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+        You are about to install the OTOBO package Webservice-Markdown.&lt;br/&gt;
+        &lt;br/&gt;
+        The package requires the CPAN modules Markdown::Perl and HTML::TreeBuilder.&lt;br/&gt;
+        &lt;br/&gt;
+        ((enjoy))&lt;br/&gt;
+        &lt;br/&gt;
+    </IntroInstall>
+    <IntroInstall Lang="de" Title="Installationsinformation" Type="pre">
+        &lt;br/&gt;
+        &lt;strong&gt;WILLKOMMEN&lt;/strong&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+        Sie sind dabei, das OTOBO Paket Webservice-Markdown zu installieren.&lt;br/&gt;
+        &lt;br/&gt;
+        Das Paket benötigt die CPAN-Module Markdown::Perl und HTML::TreeBuilder.&lt;br/&gt;
+        &lt;br/&gt;
+        ((enjoy))&lt;br/&gt;
+        &lt;br/&gt;
+    </IntroInstall>
+    <IntroInstall Lang="en" Title="Install Information" Type="post">
+        &lt;br/&gt;
+        &lt;strong&gt;NOTICE&lt;/strong&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+        The package overrides the generic interface ticket invokers and operations via the Custom directory.
+        Please check that no other installed package ships the same files.&lt;br/&gt;
+        &lt;br/&gt;
+        ((enjoy))&lt;br/&gt;
+        &lt;br/&gt;
+    </IntroInstall>
+</otobo_package>
