@@ -8,6 +8,7 @@
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">Markdown support for web services: converts Markdown article bodies to HTML in the ticket operations and HTML article bodies to Markdown in the ticket invokers.</Description>
     <Description Lang="de">Markdown-Unterstützung für Webservices: wandelt Markdown-Artikel in den Ticket-Operationen nach HTML und HTML-Artikel in den Ticket-Invokern nach Markdown.</Description>
+    <Description Lang="hu">Markdown-támogatás a webszolgáltatásokhoz: átalakítja a Markdown-formátumú bejegyzéstörzseket HTML-re a jegyműveletekben, illetve a HTML-formátumú bejegyzéstörzseket Markdownra a jegymeghívókban.</Description>
     <ModuleRequired Version="1.14">Markdown::Perl</ModuleRequired>
     <ModuleRequired Version="5.07">HTML::TreeBuilder</ModuleRequired>
     <Filelist>
@@ -46,6 +47,18 @@
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
     </IntroInstall>
+    <IntroInstall Lang="hu" Title="Telepítési információk" Type="pre">
+        &lt;br/&gt;
+        &lt;strong&gt;ÜDVÖZÖLJÜK&lt;/strong&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+        Ön a Webservice-Markdown OTOBO-csomag telepítésére készül.&lt;br/&gt;
+        &lt;br/&gt;
+        A csomag a Markdown::Perl és a HTML::TreeBuilder CPAN-modulokat igényli.&lt;br/&gt;
+        &lt;br/&gt;
+        ((enjoy))&lt;br/&gt;
+        &lt;br/&gt;
+    </IntroInstall>
     <IntroInstall Lang="en" Title="Install Information" Type="post">
         &lt;br/&gt;
         &lt;strong&gt;NOTICE&lt;/strong&gt;
@@ -53,6 +66,17 @@
         &lt;br/&gt;
         The package overrides the generic interface ticket invokers and operations via the Custom directory.
         Please check that no other installed package ships the same files.&lt;br/&gt;
+        &lt;br/&gt;
+        ((enjoy))&lt;br/&gt;
+        &lt;br/&gt;
+    </IntroInstall>
+    <IntroInstall Lang="en" Title="Install Information" Type="post">
+        &lt;br/&gt;
+        &lt;strong&gt;MEGJEGYZÉS&lt;/strong&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+        A csomag felülírja az általános felület jegymeghívóit és műveleteit a „Custom” könyvtáron keresztül.
+        Ellenőrizze, hogy más telepített csomag nem szállítja-e ugyanazokat a fájlokat.&lt;br/&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
